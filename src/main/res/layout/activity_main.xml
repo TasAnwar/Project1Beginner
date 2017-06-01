@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wheat"
+    android:orientation="vertical"
+    tools:context="com.example.android.projectone.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/wheat"
+        android:padding="@dimen/padding_min">
+
+        <ImageView
+            android:id="@+id/cake_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cakeproj1"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cake_image"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="cursive"
+            android:text="@string/simply_irresistible"
+            android:textColor="@color/ghostwhite"
+            android:textSize="@dimen/image_text_size" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/burlywood"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/cakes_pastries_and_many_more_sugary_treats_at_their_best"
+        android:textSize="@dimen/desc_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/cakes_n_bakes"
+        android:textSize="@dimen/addr_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/brown_plaza_chennai"
+        android:textSize="@dimen/addr_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/phone_044_278675"
+        android:textSize="@dimen/addr_text_size" />
+    </LinearLayout>
+
+</ScrollView>
